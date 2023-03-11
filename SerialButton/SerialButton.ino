@@ -1,3 +1,7 @@
+//credit to: https://github.com/fmgrafikdesign/SimpleWebSerialJS/blob/main/examples/control-led-with-button/plain/plain.ino
+//Arduino script used to interface with the front end + AI control model. 
+
+
 //wire up an LED to pin 2
 const int ledPin = 2;
 void setup() {
