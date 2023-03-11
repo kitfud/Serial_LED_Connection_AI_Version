@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+button{
+  width:100%;
+  font-size: 40px;
+  padding:10px 10px 10px 10px;
+}
+
+div{
+  margin:10px 10px 10px 10px;
+  display:block;
+  text-align: center;
+  
+}
+
+#downloadContainer{
+  margin:5px 5px 5px 5px; 
+}

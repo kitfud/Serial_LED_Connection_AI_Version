@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script lang="text/javascript" src="https://unpkg.com/simple-web-serial@latest/dist/simple-serial.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Plain - Control LED with button</title>
+<link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+
+  <div id="connectContainer">
+    <div id="downloadContainer">
+      <a href="SerialButton/SerialButton.ino" download>download Arduino Files</a>
+    </div> 
+    <button onclick="connect()">Connect to Serial Port With Arduino</button>
+<br><br>
+  </div>
+
+
+<div id="controlContainer">
+  <div>Manually trigger the LED on Pin 2</div>
+<button onclick="buttonToggle()">Toggle LED</button>
+
+<div>Teachable Machine Image Trigger Model</div>
+  <div>Palm open to turn on LED/Palm Closed To Turn Off LED</div>
+<button type="button" onclick="init()">Start</button>
+<div id="webcam-container"></div>
+<div id="label-container"></div>
+</div>
+
+  
+<script src="script.js"></script>
+
+</body>
+</html>
